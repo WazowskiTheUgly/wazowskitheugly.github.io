@@ -10,7 +10,7 @@
 const GAMES = [
   {
     name: "Trap and Bait",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Fully coded by me.",
     studio: "Devextra",
     visits: 32157487,
@@ -50,7 +50,7 @@ const GAMES = [
   },
   {
     name: "Dodge Walls For Brainrots!",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Fully coded by me.",
     studio: "mcgiggity game production studio",
     visits: 2437712,
@@ -60,7 +60,7 @@ const GAMES = [
   },
   {
     name: "My Singing Fish!",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Programmed the entire game within a week.",
     studio: "HowtoCCU?",
     visits: 918626,
@@ -70,7 +70,7 @@ const GAMES = [
   },
   {
     name: "Build a Snowman ☃️",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Coded the entire game within the span of a week.",
     studio: "D2D Studio",
     visits: 881020,
@@ -80,7 +80,7 @@ const GAMES = [
   },
   {
     name: "Raise ur Dog 🐶",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Coded the entire game within a few days.",
     studio: "D2D Studio",
     visits: 470702,
@@ -90,7 +90,7 @@ const GAMES = [
   },
   {
     name: "Flamethrower Ice For Brainrots!",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Fully coded by me.",
     studio: "my pfp studios",
     visits: 274056,
@@ -100,7 +100,7 @@ const GAMES = [
   },
   {
     name: "Lucky Block Arena",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "In charge of coding the entire game — multiple systems and challenging combat mechanics, produced over 2 months.",
     studio: "Devextra",
     visits: 237532,
@@ -110,7 +110,7 @@ const GAMES = [
   },
   {
     name: "Build A Bridge To Brainrot!",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Fully coded by me.",
     studio: "Better Call Studios",
     visits: 110747,
@@ -120,7 +120,7 @@ const GAMES = [
   },
   {
     name: "Spin to Skydive",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Fully coded by me.",
     studio: "D2D Studio",
     visits: 30953,
@@ -130,7 +130,7 @@ const GAMES = [
   },
   {
     name: "My Brainrot Lab",
-    role: "Coded entire game",
+    role: "Programmer",
     contribution: "Fully coded by me.",
     studio: "IGD: Studio",
     visits: 22589,
