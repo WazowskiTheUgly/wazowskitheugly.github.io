@@ -10,8 +10,8 @@
 const GAMES = [
   {
     name: "Trap and Bait",
-    role: "Full codebase rewrite",
-    contribution: "Tasked with rewriting the entire game's codebase.",
+    role: "Coded entire game",
+    contribution: "Fully coded by me.",
     studio: "Devextra",
     visits: 32157487,
     link: "https://www.roblox.com/games/117957332897543",
@@ -21,7 +21,7 @@ const GAMES = [
   {
     name: "Rescue Animals",
     role: "LiveOps · 3 updates",
-    contribution: "Shipped 3 urgent updates, 2 in collaboration with another programmer.",
+    contribution: "Shipped 3 urgent updates.",
     studio: "Devextra",
     visits: 29824338,
     link: "https://www.roblox.com/games/105775525885873",
