@@ -308,3 +308,16 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
 } else {
   document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
 }
+
+/* ---- Cursor glow on the background grid ---- */
+if (!prefersReducedMotion) {
+  const bgGrid = document.getElementById("bgGrid");
+  window.addEventListener(
+    "pointermove",
+    (e) => {
+      bgGrid.style.setProperty("--glow-x", e.clientX + "px");
+      bgGrid.style.setProperty("--glow-y", e.clientY + "px");
+    },
+    { passive: true }
+  );
+}
