@@ -51,6 +51,7 @@ const GAMES = [
   {
     name: "Dodge Walls For Brainrots!",
     role: "Coded entire game",
+    contribution: "Fully coded by me.",
     studio: "mcgiggity game production studio",
     visits: 2437712,
     link: "https://www.roblox.com/games/129542554998533",
@@ -90,6 +91,7 @@ const GAMES = [
   {
     name: "Flamethrower Ice For Brainrots!",
     role: "Coded entire game",
+    contribution: "Fully coded by me.",
     studio: "my pfp studios",
     visits: 274056,
     link: "https://www.roblox.com/games/135655248565072",
@@ -109,6 +111,7 @@ const GAMES = [
   {
     name: "Build A Bridge To Brainrot!",
     role: "Coded entire game",
+    contribution: "Fully coded by me.",
     studio: "Better Call Studios",
     visits: 110747,
     link: "https://www.roblox.com/games/125588131307196",
@@ -118,6 +121,7 @@ const GAMES = [
   {
     name: "Spin to Skydive",
     role: "Coded entire game",
+    contribution: "Fully coded by me.",
     studio: "D2D Studio",
     visits: 30953,
     link: "https://www.roblox.com/games/71698412165346",
@@ -127,6 +131,7 @@ const GAMES = [
   {
     name: "My Brainrot Lab",
     role: "Coded entire game",
+    contribution: "Fully coded by me.",
     studio: "IGD: Studio",
     visits: 22589,
     link: "https://www.roblox.com/games/90096860712266",
@@ -224,9 +229,7 @@ for (const game of GAMES) {
     </div>
     <div class="card-body">
       <h3>${game.name}</h3>
-      <p class="card-studio">${game.studio}</p>
       ${game.contribution ? `<p class="card-contrib">${game.contribution}</p>` : ""}
-      <p class="card-desc">${game.desc}</p>
     </div>`;
   gameGrid.appendChild(card);
 }
