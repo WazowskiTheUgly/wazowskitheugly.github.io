@@ -268,6 +268,18 @@ a {
   gap: 22px;
 }
 
+/* Wider container + bigger cards for the video showcase section */
+.container.wide {
+  max-width: 1520px;
+}
+
+@media (min-width: 700px) {
+  .grid-lg {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 26px;
+  }
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
