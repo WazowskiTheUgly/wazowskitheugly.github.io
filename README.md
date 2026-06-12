@@ -5,11 +5,12 @@ Plain HTML/CSS/JS — no build tools, no dependencies. Edit a file, refresh the 
 
 ## Preview locally
 
-Just open `index.html` in a browser (double-click it), or from this folder run:
+Double-click **`preview.cmd`** — it starts a tiny local server and opens the site
+at http://localhost:8080. Close its window to stop the server.
 
-```
-start index.html
-```
+Don't open `index.html` directly from disk: the page itself works, but YouTube
+blocks the showcase videos on `file://` pages (Error 153 — no referrer), so the
+videos only play when served over http (the local server or the live site).
 
 ## How to edit content
 
