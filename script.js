@@ -10,6 +10,7 @@
 const GAMES = [
   {
     name: "Trap and Bait",
+    role: "Fully coded",
     studio: "Devextra",
     visits: 32157487,
     link: "https://www.roblox.com/games/117957332897543",
@@ -18,6 +19,7 @@ const GAMES = [
   },
   {
     name: "Rescue Animals",
+    role: "3 updates · LiveOps",
     studio: "Devextra",
     visits: 29824338,
     link: "https://www.roblox.com/games/105775525885873",
@@ -26,6 +28,7 @@ const GAMES = [
   },
   {
     name: "K-Pop Baddies",
+    role: "Programmer · LiveOps",
     studio: "ZING0",
     visits: 6023432,
     link: "https://www.roblox.com/games/103291871182886",
@@ -34,6 +37,7 @@ const GAMES = [
   },
   {
     name: "Ride down a Waterslide",
+    role: "Programmer · LiveOps",
     studio: "Devextra",
     visits: 5177043,
     link: "https://www.roblox.com/games/118399364638145",
@@ -42,6 +46,7 @@ const GAMES = [
   },
   {
     name: "Dodge Walls For Brainrots!",
+    role: "Programmer · LiveOps",
     studio: "mcgiggity game production studio",
     visits: 2437712,
     link: "https://www.roblox.com/games/129542554998533",
@@ -50,6 +55,7 @@ const GAMES = [
   },
   {
     name: "My Singing Fish!",
+    role: "Programmer · LiveOps",
     studio: "HowtoCCU?",
     visits: 918626,
     link: "https://www.roblox.com/games/117050355640712",
@@ -58,6 +64,7 @@ const GAMES = [
   },
   {
     name: "Build a Snowman ☃️",
+    role: "Programmer · LiveOps",
     studio: "D2D Studio",
     visits: 881020,
     link: "https://www.roblox.com/games/105953253717179",
@@ -66,6 +73,7 @@ const GAMES = [
   },
   {
     name: "Raise ur Dog 🐶",
+    role: "Programmer · LiveOps",
     studio: "D2D Studio",
     visits: 470702,
     link: "https://www.roblox.com/games/113977671592780",
@@ -74,6 +82,7 @@ const GAMES = [
   },
   {
     name: "Flamethrower Ice For Brainrots!",
+    role: "Programmer · LiveOps",
     studio: "my pfp studios",
     visits: 274056,
     link: "https://www.roblox.com/games/135655248565072",
@@ -82,6 +91,7 @@ const GAMES = [
   },
   {
     name: "Lucky Block Arena",
+    role: "Programmer · LiveOps",
     studio: "Devextra",
     visits: 237532,
     link: "https://www.roblox.com/games/94407429155803",
@@ -90,6 +100,7 @@ const GAMES = [
   },
   {
     name: "Build A Bridge To Brainrot!",
+    role: "Programmer · LiveOps",
     studio: "Better Call Studios",
     visits: 110747,
     link: "https://www.roblox.com/games/125588131307196",
@@ -98,6 +109,7 @@ const GAMES = [
   },
   {
     name: "Spin to Skydive",
+    role: "Programmer · LiveOps",
     studio: "D2D Studio",
     visits: 30953,
     link: "https://www.roblox.com/games/71698412165346",
@@ -106,6 +118,7 @@ const GAMES = [
   },
   {
     name: "My Brainrot Lab",
+    role: "Programmer · LiveOps",
     studio: "IGD: Studio",
     visits: 22589,
     link: "https://www.roblox.com/games/90096860712266",
@@ -198,6 +211,7 @@ for (const game of GAMES) {
   card.innerHTML = `
     <div class="card-media">
       <img src="${game.image}" alt="${game.name} thumbnail" loading="lazy">
+      <span class="role-badge">${game.role}</span>
       <span class="visits-badge">▶ ${formatVisits(game.visits)} visits</span>
     </div>
     <div class="card-body">

@@ -296,6 +296,20 @@ iframe.card-media {
   backdrop-filter: blur(4px);
 }
 
+.role-badge {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: rgba(7, 12, 9, 0.82);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
 .play-button {
   position: absolute;
   inset: 0;
