@@ -109,16 +109,6 @@ const GAMES = [
     desc: "The first ever battlegrounds simulator. Open lucky blocks for rare abilities, build the best loadout and fight for crowns.",
   },
   {
-    name: "Build A Bridge To Brainrot!",
-    role: "Programmer",
-    contribution: "Fully coded by me.",
-    studio: "Better Call Studios",
-    visits: 110747,
-    link: "https://www.roblox.com/games/125588131307196",
-    image: "assets/games/build-a-bridge-to-brainrot.png",
-    desc: "Build your bridge to reach new islands, bring back Brainrots and collect the best ones. They earn cash offline.",
-  },
-  {
     name: "Spin to Skydive",
     role: "Programmer",
     contribution: "Fully coded by me.",
@@ -127,16 +117,6 @@ const GAMES = [
     link: "https://www.roblox.com/games/71698412165346",
     image: "assets/games/spin-to-skydive.png",
     desc: "Spin to win, then skydive.",
-  },
-  {
-    name: "My Brainrot Lab",
-    role: "Programmer",
-    contribution: "Fully coded by me.",
-    studio: "IGD: Studio",
-    visits: 22589,
-    link: "https://www.roblox.com/games/90096860712266",
-    image: "assets/games/my-brainrot-lab.png",
-    desc: "Get potions and mutate Brainrots — mutations stack and mutated Brainrots earn more. Money stacks while you sleep.",
   },
 ];
 
