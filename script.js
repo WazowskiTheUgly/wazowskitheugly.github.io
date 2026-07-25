@@ -10,7 +10,7 @@
 const GAMES = [
   {
     name: "Trap and Bait",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Fully coded by me.",
     studio: "Devextra",
     visits: 32157487,
@@ -29,8 +29,18 @@ const GAMES = [
     desc: "Rescue animals from a burning tower and earn income from them on your plot. The higher you climb, the better the pets.",
   },
   {
+    name: "STARFALL",
+    role: "LiveOps · 1 update",
+    contribution: "Coded 1 update for the game.",
+    studio: "Darkstar Interactive",
+    visits: 9833431,
+    link: "https://www.roblox.com/games/102529979143737",
+    image: "assets/games/starfall.png",
+    desc: "Large-scale interstellar PvE and PvP battles. Team up with friends against waves of mercenaries, machines and monsters — and call in your choice of three mecha classes.",
+  },
+  {
     name: "K-Pop Baddies",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Produced within 2 weeks.",
     studio: "ZING0",
     visits: 6023432,
@@ -50,7 +60,7 @@ const GAMES = [
   },
   {
     name: "Dodge Walls For Brainrots!",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Fully coded by me.",
     studio: "mcgiggity game production studio",
     visits: 2437712,
@@ -60,7 +70,7 @@ const GAMES = [
   },
   {
     name: "My Singing Fish!",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Programmed the entire game within a week.",
     studio: "HowtoCCU?",
     visits: 918626,
@@ -70,7 +80,7 @@ const GAMES = [
   },
   {
     name: "Build a Snowman ☃️",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Coded the entire game within the span of a week.",
     studio: "D2D Studio",
     visits: 881020,
@@ -80,7 +90,7 @@ const GAMES = [
   },
   {
     name: "Raise ur Dog 🐶",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Coded the entire game within a few days.",
     studio: "D2D Studio",
     visits: 470702,
@@ -90,7 +100,7 @@ const GAMES = [
   },
   {
     name: "Flamethrower Ice For Brainrots!",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Fully coded by me.",
     studio: "my pfp studios",
     visits: 274056,
@@ -100,7 +110,7 @@ const GAMES = [
   },
   {
     name: "Lucky Block Arena",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "In charge of coding the entire game — multiple systems and challenging combat mechanics, produced over 2 months.",
     studio: "Devextra",
     visits: 237532,
@@ -109,14 +119,34 @@ const GAMES = [
     desc: "The first ever battlegrounds simulator. Open lucky blocks for rare abilities, build the best loadout and fight for crowns.",
   },
   {
+    name: "Elemental Merge Defense",
+    role: "Solo Programmer",
+    contribution: "Fully coded by me.",
+    studio: "Mambo The Merger",
+    visits: 104996,
+    link: "https://www.roblox.com/games/76596765173101",
+    image: "assets/games/elemental-merge-defense.png",
+    desc: "Defend your base against endless waves of enemies and bosses. Merge matching towers to unlock stronger ones, and infuse them with magic elements for devastating abilities.",
+  },
+  {
     name: "Spin to Skydive",
-    role: "Programmer",
+    role: "Solo Programmer",
     contribution: "Fully coded by me.",
     studio: "D2D Studio",
     visits: 30953,
     link: "https://www.roblox.com/games/71698412165346",
     image: "assets/games/spin-to-skydive.png",
     desc: "Spin to win, then skydive.",
+  },
+  {
+    name: "Save Animals From Drowning!",
+    role: "Solo Programmer",
+    contribution: "Fully coded by me.",
+    studio: "The top 67%",
+    visits: 8125,
+    link: "https://www.roblox.com/games/131683972885424",
+    image: "assets/games/save-animals-from-drowning.png",
+    desc: "Throw your lasso at drowning animals, pull them to safety, and earn money from every rescue — your animals earn and level even while offline.",
   },
 ];
 
