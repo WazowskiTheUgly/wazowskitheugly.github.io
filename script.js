@@ -2,8 +2,8 @@
    EDIT YOUR CONTENT HERE
    --------------------------------------------------------------------------
    GAMES    = shipped Roblox games (thumbnail image + play link + visits)
-   PROJECTS = systems/showcases with a YouTube video demo ("video" is the
-              YouTube video ID — the part after watch?v= in the URL)
+   PROJECTS = systems/showcases with a self-hosted demo clip ("file" is the
+              path without extension; drop <file>.mp4 + <file>.jpg in assets/videos)
    To add a new entry, copy one block { ... }, and edit it.
    ========================================================================== */
 
@@ -163,72 +163,72 @@ const GAMES = [
 const PROJECTS = [
   {
     title: "Pirate Fleet Attack",
-    video: "OHZDI_w3c_E",
+    file: "assets/videos/pirate-fleet-attack",
     desc: "Space combat: pilot a ship against an attacking pirate fleet. Ship flight, weapons and enemy fleet AI all scripted by me.",
   },
   {
     title: "Sword Mech",
-    video: "dgZXwx5gYHA",
+    file: "assets/videos/sword-mech",
     desc: "Piloted mech with sword-based melee combat, movement rig and hit detection scripted by me.",
   },
   {
     title: "Combat Tank",
-    video: "bChsHZ9-Fqc",
+    file: "assets/videos/combat-tank",
     desc: "A fully functional tank with a custom physics-based rig that simulates tank-like movement. Includes a working cannon and turret, and can be destroyed.",
   },
   {
     title: "Attack Helicopter",
-    video: "YXkV9Z9KKoU",
+    file: "assets/videos/attack-helicopter",
     desc: "Fully operable attack helicopter built on the same framework as the tank — mounted turret, missile system, and destructible.",
   },
   {
     title: "Weapon Framework",
-    video: "H3F_W39J5Qg",
+    file: "assets/videos/weapon-framework",
     desc: "A complete third-person + FPS weapon framework that supports all types of weapons and is extremely modular.",
   },
   {
     title: "Military Vehicles",
-    video: "IjbgEyvpScg",
+    file: "assets/videos/military-vehicles",
     desc: "A set of military vehicles on a physics-based chassis rig simulating suspension and other vehicle behavior. Same framework as the tank & heli.",
   },
   {
     title: "Melee Combat",
-    video: "FzcvHygie1E",
+    file: "assets/videos/melee-combat",
     desc: "Melee combat system with a 3-hit M1 combo, blocking, and a finisher.",
   },
   {
     title: "Ability Moveset",
-    video: "PTH7SES4GLU",
+    file: "assets/videos/ability-moveset",
     desc: "An ability moveset for the character Mihawk from One Piece. My first time making Roblox VFX & animations.",
   },
   {
     title: "Card Opening Gacha",
-    video: "FojxGOBNQU4",
+    file: "assets/videos/card-opening-gacha",
     desc: "A card-opening gacha animation for an anime game, animated entirely in code. Includes gacha functionality that grants players random weapons.",
   },
   {
     title: "Furniture Placement",
-    video: "XpDa0onltag",
+    file: "assets/videos/furniture-placement",
     desc: "A complete furniture placement system — placing, grid toggle, resizing, replacing, deleting and more. Inspired by Adopt Me.",
   },
   {
     title: "Skill Tree System",
-    video: "X0AB9NdFRQI",
+    file: "assets/videos/skill-tree-system",
     desc: "Skill tree inspired by PETS GO. Fully modular — skills can be added and removed easily, and it's smooth on the player's end.",
   },
   {
     title: "Pet Simulator",
-    video: "ICBlhpvlOQc",
+    file: "assets/videos/pet-simulator",
     desc: "A simulator game in the style of Pet Simulator, with pets, destruction mechanics and multiple other features.",
   },
   {
     title: "Pet System",
-    video: "UUejeD5T2i0",
+    file: "assets/videos/pet-system",
     desc: "Interactive inventory system for equipping pets. Pets are client-sided and dynamically match the height of the object they stand on.",
   },
   {
     title: "Egg Hatching System",
-    video: "EysCCgAXqOg",
+    file: "assets/videos/egg-hatching-system",
     desc: "Egg hatching for a simulator game, inspired by Pet Sim 99 and made as interactive as possible. Animation & VFX done by me.",
   },
 ];
@@ -264,58 +264,49 @@ for (const game of GAMES) {
   gameGrid.appendChild(card);
 }
 
-/* ---- Video showcases (muted autoplay, mounted as they scroll into view) ---- */
+/* ---- Video showcases (muted autoplay, self-hosted, play only while on screen) ---- */
 const projectGrid = document.getElementById("projectGrid");
-const EMBED_PARAMS = "autoplay=1&mute=1&loop=1&controls=0&rel=0&playsinline=1&modestbranding=1&iv_load_policy=3";
-
-function mountVideo(media, project) {
-  const iframe = document.createElement("iframe");
-  iframe.src = `https://www.youtube-nocookie.com/embed/${project.video}?${EMBED_PARAMS}&playlist=${project.video}`;
-  iframe.title = project.title;
-  iframe.allow = "autoplay; encrypted-media; picture-in-picture";
-  iframe.allowFullscreen = true;
-  iframe.className = "card-media";
-  iframe.tabIndex = -1;
-  media.replaceWith(iframe);
-}
 
 const videoObserver = "IntersectionObserver" in window
   ? new IntersectionObserver((entries) => {
       for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        videoObserver.unobserve(entry.target);
-        mountVideo(entry.target, entry.target._project);
+        const v = entry.target;
+        if (entry.isIntersecting) {
+          if (!v.src) v.src = v.dataset.src;
+          v.play().catch(() => {});
+        } else if (v.src) {
+          v.pause();
+        }
       }
-    }, { rootMargin: "300px 0px" })
+    }, { rootMargin: "200px 0px" })
   : null;
 
 for (const project of PROJECTS) {
   const card = document.createElement("article");
   card.className = "card reveal";
 
-  const media = document.createElement("div");
-  media.className = "card-media";
-  media._project = project;
-
-  const thumb = document.createElement("img");
-  thumb.src = `https://i.ytimg.com/vi/${project.video}/maxresdefault.jpg`;
-  thumb.alt = `${project.title} video preview`;
-  thumb.loading = "lazy";
-  thumb.onerror = () => {
-    thumb.onerror = null;
-    thumb.src = `https://i.ytimg.com/vi/${project.video}/hqdefault.jpg`;
-  };
-  media.append(thumb);
+  const video = document.createElement("video");
+  video.className = "card-media";
+  video.muted = true;
+  video.defaultMuted = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.autoplay = true;
+  video.preload = "none";
+  video.disablePictureInPicture = true;
+  video.setAttribute("aria-label", `${project.title} demo`);
+  video.poster = `${project.file}.jpg`;
+  video.dataset.src = `${project.file}.mp4`;
 
   const body = document.createElement("div");
   body.className = "card-body";
   body.innerHTML = `<h3>${project.title}</h3><p class="card-desc">${project.desc}</p>`;
 
-  card.append(media, body);
+  card.append(video, body);
   projectGrid.appendChild(card);
 
-  if (videoObserver) videoObserver.observe(media);
-  else mountVideo(media, project);
+  if (videoObserver) videoObserver.observe(video);
+  else { video.src = video.dataset.src; }
 }
 
 /* ---- Copy Discord username ---- */
