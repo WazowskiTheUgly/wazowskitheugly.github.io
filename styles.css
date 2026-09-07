@@ -314,6 +314,7 @@ a {
 
 iframe.card-media {
   aspect-ratio: 16 / 9;
+  pointer-events: none;
 }
 
 .visits-badge {
@@ -342,28 +343,6 @@ iframe.card-media {
   padding: 4px 10px;
   border-radius: 999px;
   backdrop-filter: blur(4px);
-}
-
-.play-button {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background: rgba(7, 12, 9, 0.75);
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.15s, background 0.2s;
-}
-
-.video-facade:hover .play-button {
-  transform: scale(1.1);
-  background: var(--accent);
-  color: #07140c;
 }
 
 .card-body {

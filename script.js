@@ -264,16 +264,38 @@ for (const game of GAMES) {
   gameGrid.appendChild(card);
 }
 
-/* ---- Video showcases (click-to-play facade keeps the page fast) ---- */
+/* ---- Video showcases (muted autoplay, mounted as they scroll into view) ---- */
 const projectGrid = document.getElementById("projectGrid");
+const EMBED_PARAMS = "autoplay=1&mute=1&loop=1&controls=0&rel=0&playsinline=1&modestbranding=1&iv_load_policy=3";
+
+function mountVideo(media, project) {
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube-nocookie.com/embed/${project.video}?${EMBED_PARAMS}&playlist=${project.video}`;
+  iframe.title = project.title;
+  iframe.allow = "autoplay; encrypted-media; picture-in-picture";
+  iframe.allowFullscreen = true;
+  iframe.className = "card-media";
+  iframe.tabIndex = -1;
+  media.replaceWith(iframe);
+}
+
+const videoObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        videoObserver.unobserve(entry.target);
+        mountVideo(entry.target, entry.target._project);
+      }
+    }, { rootMargin: "300px 0px" })
+  : null;
+
 for (const project of PROJECTS) {
   const card = document.createElement("article");
   card.className = "card reveal";
 
-  const media = document.createElement("button");
-  media.className = "card-media video-facade";
-  media.type = "button";
-  media.setAttribute("aria-label", `Play video: ${project.title}`);
+  const media = document.createElement("div");
+  media.className = "card-media";
+  media._project = project;
 
   const thumb = document.createElement("img");
   thumb.src = `https://i.ytimg.com/vi/${project.video}/maxresdefault.jpg`;
@@ -283,21 +305,7 @@ for (const project of PROJECTS) {
     thumb.onerror = null;
     thumb.src = `https://i.ytimg.com/vi/${project.video}/hqdefault.jpg`;
   };
-
-  const playBtn = document.createElement("span");
-  playBtn.className = "play-button";
-  playBtn.innerHTML = `<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>`;
-
-  media.append(thumb, playBtn);
-  media.addEventListener("click", () => {
-    const iframe = document.createElement("iframe");
-    iframe.src = `https://www.youtube-nocookie.com/embed/${project.video}?autoplay=1&rel=0`;
-    iframe.title = project.title;
-    iframe.allow = "autoplay; encrypted-media; picture-in-picture";
-    iframe.allowFullscreen = true;
-    media.replaceWith(iframe);
-    iframe.className = "card-media";
-  });
+  media.append(thumb);
 
   const body = document.createElement("div");
   body.className = "card-body";
@@ -305,6 +313,9 @@ for (const project of PROJECTS) {
 
   card.append(media, body);
   projectGrid.appendChild(card);
+
+  if (videoObserver) videoObserver.observe(media);
+  else mountVideo(media, project);
 }
 
 /* ---- Copy Discord username ---- */
