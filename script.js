@@ -152,6 +152,16 @@ const GAMES = [
 
 const PROJECTS = [
   {
+    title: "Pirate Fleet Attack",
+    video: "OHZDI_w3c_E",
+    desc: "Space combat: pilot a ship against an attacking pirate fleet. Ship flight, weapons and enemy fleet AI all scripted by me.",
+  },
+  {
+    title: "Sword Mech",
+    video: "dgZXwx5gYHA",
+    desc: "Piloted mech with sword-based melee combat, movement rig and hit detection scripted by me.",
+  },
+  {
     title: "Combat Tank",
     video: "bChsHZ9-Fqc",
     desc: "A fully functional tank with a custom physics-based rig that simulates tank-like movement. Includes a working cannon and turret, and can be destroyed.",
