@@ -262,9 +262,17 @@ a {
    Card grid (games + showcases)
    ========================================================================== */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 22px;
+  --gap: 22px;
+  --cols: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.grid > .card {
+  flex: 1 1 300px;
+  max-width: calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
 }
 
 /* Wider container + bigger cards for the video showcase section */
@@ -274,8 +282,16 @@ a {
 
 @media (min-width: 700px) {
   .grid-lg {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 26px;
+    --gap: 26px;
+  }
+  .grid-lg > .card {
+    flex-basis: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    --cols: 2;
   }
 }
 
@@ -573,7 +589,7 @@ video.card-media {
    ========================================================================== */
 @media (max-width: 540px) {
   .grid {
-    grid-template-columns: 1fr;
+    --cols: 1;
   }
   .nav-inner {
     justify-content: center;
