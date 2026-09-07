@@ -10,8 +10,8 @@
 const GAMES = [
   {
     name: "Steal A Masterpiece",
-    role: "Independent · Full Game",
-    contribution: "My own game — designed, programmed and shipped solo. Launched September 2026.",
+    role: "Solo Programmer",
+    contribution: "Stealing game, fully coded by me.",
     studio: "Mambo The Thief",
     visits: 5538,
     link: "https://www.roblox.com/games/103811481905543",
