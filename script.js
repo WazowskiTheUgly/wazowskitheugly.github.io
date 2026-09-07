@@ -9,6 +9,16 @@
 
 const GAMES = [
   {
+    name: "Steal A Masterpiece",
+    role: "Independent · Full Game",
+    contribution: "My own game — designed, programmed and shipped solo. Launched September 2026.",
+    studio: "Mambo The Thief",
+    visits: 5538,
+    link: "https://www.roblox.com/games/103811481905543",
+    image: "assets/games/steal-a-masterpiece.png",
+    desc: "Build a museum, collect masterpieces and steal them from other players. Break into rival museums at night with bats, C4 and traps, then defend your own.",
+  },
+  {
     name: "Trap and Bait",
     role: "Solo Programmer",
     contribution: "Fully coded by me.",
