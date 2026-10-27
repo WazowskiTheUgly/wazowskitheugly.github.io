@@ -14,7 +14,7 @@ at http://localhost:8080. Close its window to stop the server.
 | --- | --- |
 | Shipped games (cards with thumbnails) | `GAMES` list at the top of `script.js` |
 | Video showcases (tank, weapon framework, etc.) | `PROJECTS` list at the top of `script.js` — `file` is the path without extension; put `<file>.mp4` (720p, no audio) and `<file>.jpg` poster in `assets/videos/` |
-| Bio, stats, experience, skills, contact info | `index.html` — each section is marked with a `<!-- ===== SECTION ===== -->` comment |
+| Bio, stats, contact info | `index.html` — each section is marked with a `<!-- ===== SECTION ===== -->` comment |
 | Colors / theme | The `:root` variables at the top of `styles.css` |
 | Game thumbnails | `assets/games/` — 768x432 PNGs pulled from Roblox |
 

@@ -4,32 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wazowski — Roblox Programmer &amp; Game Designer</title>
-  <meta name="description" content="Full Stack Roblox developer with 100M+ visits across shipped games. Luau programmer, game designer, and systems engineer.">
+  <meta name="description" content="Full Stack Roblox developer with 100,000,000+ visits across shipped games. Luau programmer, game designer, and systems engineer.">
+  <meta name="theme-color" content="#020402">
 
   <meta property="og:title" content="Wazowski — Roblox Programmer &amp; Game Designer">
-  <meta property="og:description" content="Full Stack Roblox developer with 100M+ visits across shipped games.">
+  <meta property="og:description" content="Full Stack Roblox developer with 100,000,000+ visits across shipped games.">
   <meta property="og:type" content="website">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0d0b'/%3E%3Ctext x='50' y='72' font-size='62' font-family='Arial,sans-serif' font-weight='bold' fill='%234ade80' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23020402'/%3E%3Crect x='6' y='6' width='88' height='88' fill='none' stroke='%2300ff41' stroke-width='8'/%3E%3Ctext x='50' y='70' font-size='56' font-family='Consolas,monospace' font-weight='bold' fill='%2300ff41' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 
   <div class="bg-grid" id="bgGrid" aria-hidden="true"></div>
 
   <header class="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="nav-logo">Wazowski<span class="accent">.</span></a>
+    <div class="container wide nav-inner">
+      <a href="#top" class="nav-logo">WAZOWSKI<span class="caret" aria-hidden="true"></span></a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#experience">Experience</a>
-        <a href="#work">Showcase</a>
         <a href="#games">Games</a>
-        <a href="#skills">Skills</a>
+        <a href="#work">Showcase</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
@@ -39,79 +38,78 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Roblox Programmer &middot; Game Designer</p>
-        <h1>Wazowski</h1>
+      <div class="container wide hero-inner">
+        <div class="hero-meta">
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Open for work</p>
+          <p class="eyebrow">&gt; Roblox Programmer // Game Designer</p>
+        </div>
+
+        <h1 class="hero-name" id="heroName" aria-label="Wazowski" data-text="WAZOWSKI">WAZOWSKI</h1>
+
         <p class="hero-tagline">
-          Full Stack Roblox developer shipping high-quality games and writing performant
-          Luau code. 5+ years on the platform, always experimenting with new tooling and
-          AI-assisted development pipelines.
+          Full stack Roblox developer shipping high-quality games and performant
+          Luau code. 5+ years on the platform.
         </p>
 
         <ul class="stats" aria-label="Career stats">
-          <li><span class="stat-num">100M+</span><span class="stat-label">Total game visits</span></li>
-          <li><span class="stat-num">16+</span><span class="stat-label">Project credits</span></li>
-          <li><span class="stat-num">5</span><span class="stat-label">Years on platform</span></li>
-          <li><span class="stat-num">2</span><span class="stat-label">Years professional</span></li>
+          <li class="stat">
+            <span class="stat-num" data-count="100000000" data-suffix="+">100,000,000+</span>
+            <span class="stat-label">Total game visits</span>
+          </li>
+          <li class="stat">
+            <span class="stat-num" data-count="17">17</span>
+            <span class="stat-label">Project credits</span>
+          </li>
         </ul>
+
+        <nav class="hero-actions" aria-label="Jump to section">
+          <a class="btn-brutal" href="#games">
+            <span class="btn-text">
+              <span class="btn-label">Games</span>
+              <span class="btn-sub" id="gamesCount">Shipped on Roblox</span>
+            </span>
+            <span class="btn-arrow" aria-hidden="true">&darr;</span>
+          </a>
+          <a class="btn-brutal" href="#work">
+            <span class="btn-text">
+              <span class="btn-label">Showcase</span>
+              <span class="btn-sub" id="showcaseCount">Systems &amp; demos</span>
+            </span>
+            <span class="btn-arrow" aria-hidden="true">&darr;</span>
+          </a>
+          <a class="btn-brutal" href="#contact">
+            <span class="btn-text">
+              <span class="btn-label">Contact</span>
+              <span class="btn-sub">Discord &middot; Talent Hub</span>
+            </span>
+            <span class="btn-arrow" aria-hidden="true">&darr;</span>
+          </a>
+        </nav>
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <ol class="timeline">
-          <li class="timeline-item">
-            <div class="timeline-head">
-              <h3>Independent Developer</h3>
-              <span class="timeline-date">2026 &ndash; Present</span>
-            </div>
-            <p class="timeline-role">Programming, Building, UI Design</p>
-            <ul>
-              <li>Started working on personal projects and shipped multiple of them.</li>
-            </ul>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-head">
-              <h3>Devextra LLC</h3>
-              <span class="timeline-date">Jul 2025 &ndash; Jan 2026</span>
-            </div>
-            <p class="timeline-role">Full Stack Programmer</p>
-            <ul>
-              <li>Coded and shipped 10 games in 6 months, reaching <strong>80M+ total visits</strong>.</li>
-              <li>Collaborated in a team environment to deliver high-performance game systems.</li>
-              <li>Provided LiveOps support to multiple projects post launch.</li>
-            </ul>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-head">
-              <h3>Elemental XYZ</h3>
-              <span class="timeline-date">Late 2024</span>
-            </div>
-            <p class="timeline-role">Full Stack Programmer</p>
-            <ul>
-              <li>Worked full time on complex projects with challenging features to implement.</li>
-            </ul>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-head">
-              <h3>Independent Freelancer</h3>
-              <span class="timeline-date">2023 &ndash; 2024</span>
-            </div>
-            <p class="timeline-role">Full Stack Programmer</p>
-            <ul>
-              <li>Worked on multiple projects for smaller developers.</li>
-            </ul>
-          </li>
-        </ol>
+    <!-- ============ SHIPPED GAMES ============ -->
+    <section id="games" class="section">
+      <div class="container wide">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2 class="section-title">Shipped Games</h2>
+        </div>
+        <p class="section-sub">
+          Live games on Roblox that I worked on as Programmer / LiveOps Support.
+        </p>
+        <!-- Game cards are generated from the GAMES list at the top of script.js -->
+        <div class="grid grid-lg" id="gameGrid"></div>
       </div>
     </section>
 
     <!-- ============ SHOWCASE ============ -->
     <section id="work" class="section">
       <div class="container wide">
-        <h2 class="section-title">Systems &amp; Showcases</h2>
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Systems &amp; Showcases</h2>
+        </div>
         <p class="section-sub">
           Frameworks and systems I've built over the years, with video demos.
           I scripted these projects &mdash; assets, animations and VFX are not mine
@@ -122,55 +120,13 @@
       </div>
     </section>
 
-    <!-- ============ SHIPPED GAMES ============ -->
-    <section id="games" class="section">
-      <div class="container wide">
-        <h2 class="section-title">Shipped Games</h2>
-        <p class="section-sub">
-          Live games on Roblox that I worked on as Programmer / LiveOps Support &mdash;
-          my role on each is on its card. Click any card to play.
-        </p>
-        <!-- Game cards are generated from the GAMES list at the top of script.js -->
-        <div class="grid grid-lg" id="gameGrid"></div>
-      </div>
-    </section>
-
-    <!-- ============ SKILLS ============ -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-group">
-          <h3>Engine &amp; Tooling</h3>
-          <ul class="chips">
-            <li>Roblox Studio</li>
-            <li>Luau</li>
-            <li>Roblox Cloud API</li>
-            <li>Automation</li>
-            <li>Git</li>
-            <li>Rojo</li>
-            <li>Wally</li>
-            <li>npm</li>
-            <li>AI-assisted dev pipelines</li>
-          </ul>
-        </div>
-        <div class="skills-group">
-          <h3>Programming Languages</h3>
-          <ul class="chips">
-            <li>Luau</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bash</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
         <p class="section-sub">
           Open for work &mdash; hourly or milestone-based, USD via PayPal / bank transfer.
         </p>
@@ -192,11 +148,12 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Wazowski &mdash; Programmer | Game Designer</p>
+    <div class="container wide footer-inner">
+      <p>&copy; <span id="year"></span> Wazowski // Programmer | Game Designer</p>
+      <p class="footer-eof">[ EOF ]</p>
     </div>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>

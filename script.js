@@ -9,21 +9,10 @@
 
 const GAMES = [
   {
-    name: "Steal A Masterpiece",
-    role: "Solo Programmer",
-    contribution: "Stealing game, fully coded by me.",
-    studio: "Mambo The Thief",
-    visits: 5538,
-    link: "https://www.roblox.com/games/103811481905543",
-    image: "assets/games/steal-a-masterpiece.png",
-    desc: "Build a museum, collect masterpieces and steal them from other players. Break into rival museums at night with bats, C4 and traps, then defend your own.",
-  },
-  {
     name: "Trap and Bait",
     role: "Solo Programmer",
-    contribution: "Fully coded by me.",
     studio: "Devextra",
-    visits: 32157487,
+    visits: 33638644,
     link: "https://www.roblox.com/games/117957332897543",
     image: "assets/games/trap-and-bait.png",
     desc: "Traps must prevent their bait from being taken, rats must steal it and sell it. Buy better traps and abilities to steal or trap more.",
@@ -31,9 +20,8 @@ const GAMES = [
   {
     name: "Rescue Animals",
     role: "LiveOps · 3 updates",
-    contribution: "Shipped 3 urgent updates.",
     studio: "Devextra",
-    visits: 29824338,
+    visits: 31941818,
     link: "https://www.roblox.com/games/105775525885873",
     image: "assets/games/rescue-animals.png",
     desc: "Rescue animals from a burning tower and earn income from them on your plot. The higher you climb, the better the pets.",
@@ -41,9 +29,8 @@ const GAMES = [
   {
     name: "STARFALL",
     role: "LiveOps · 1 update",
-    contribution: "Coded 1 update for the game.",
     studio: "Darkstar Interactive",
-    visits: 9833431,
+    visits: 10462102,
     link: "https://www.roblox.com/games/102529979143737",
     image: "assets/games/starfall.png",
     desc: "Large-scale interstellar PvE and PvP battles. Team up with friends against waves of mercenaries, machines and monsters — and call in your choice of three mecha classes.",
@@ -51,7 +38,6 @@ const GAMES = [
   {
     name: "K-Pop Baddies",
     role: "Solo Programmer",
-    contribution: "Produced within 2 weeks.",
     studio: "ZING0",
     visits: 6023432,
     link: "https://www.roblox.com/games/103291871182886",
@@ -61,9 +47,8 @@ const GAMES = [
   {
     name: "Ride down a Waterslide",
     role: "LiveOps · 1 update",
-    contribution: "Initially coded by another programmer — I was in charge of coding an update for it.",
     studio: "Devextra",
-    visits: 5177043,
+    visits: 5179952,
     link: "https://www.roblox.com/games/118399364638145",
     image: "assets/games/ride-down-a-waterslide.png",
     desc: "Ride a tube down a waterslide, earn money for distance, buy better tubes and use bullets to blow up and troll your friends.",
@@ -71,9 +56,8 @@ const GAMES = [
   {
     name: "Dodge Walls For Brainrots!",
     role: "Solo Programmer",
-    contribution: "Fully coded by me.",
     studio: "mcgiggity game production studio",
-    visits: 2437712,
+    visits: 2535112,
     link: "https://www.roblox.com/games/129542554998533",
     image: "assets/games/dodge-walls-for-brainrots.png",
     desc: "Run through tricky obstacles, dodge giant incoming walls and rescue Brainrots to earn cash for upgrades and rewards.",
@@ -81,9 +65,8 @@ const GAMES = [
   {
     name: "My Singing Fish!",
     role: "Solo Programmer",
-    contribution: "Programmed the entire game within a week.",
     studio: "HowtoCCU?",
-    visits: 918626,
+    visits: 924059,
     link: "https://www.roblox.com/games/117050355640712",
     image: "assets/games/my-singing-fish.png",
     desc: "Buy unique eggs, hatch incredible fish and build a musical fish orchestra that earns money as it performs.",
@@ -91,9 +74,8 @@ const GAMES = [
   {
     name: "Build a Snowman ☃️",
     role: "Solo Programmer",
-    contribution: "Coded the entire game within the span of a week.",
     studio: "D2D Studio",
-    visits: 881020,
+    visits: 885886,
     link: "https://www.roblox.com/games/105953253717179",
     image: "assets/games/build-a-snowman.png",
     desc: "Roll giant snowballs, stack them into snowmen on your plot, then decorate them to earn money — even while offline.",
@@ -101,9 +83,8 @@ const GAMES = [
   {
     name: "Raise ur Dog 🐶",
     role: "Solo Programmer",
-    contribution: "Coded the entire game within a few days.",
     studio: "D2D Studio",
-    visits: 470702,
+    visits: 513583,
     link: "https://www.roblox.com/games/113977671592780",
     image: "assets/games/raise-ur-dog.png",
     desc: "Watch your dog grow older, earn and unlock toys for it to play with, and watch it play even while you're offline.",
@@ -111,9 +92,8 @@ const GAMES = [
   {
     name: "Flamethrower Ice For Brainrots!",
     role: "Solo Programmer",
-    contribution: "Fully coded by me.",
     studio: "my pfp studios",
-    visits: 274056,
+    visits: 278594,
     link: "https://www.roblox.com/games/135655248565072",
     image: "assets/games/flamethrower-ice-for-brainrots.png",
     desc: "Melt ice to uncover hidden Brainrots, upgrade them to boost income and expand your base. Earns cash while offline.",
@@ -121,9 +101,8 @@ const GAMES = [
   {
     name: "Lucky Block Arena",
     role: "Solo Programmer",
-    contribution: "In charge of coding the entire game — multiple systems and challenging combat mechanics, produced over 2 months.",
     studio: "Devextra",
-    visits: 237532,
+    visits: 237583,
     link: "https://www.roblox.com/games/94407429155803",
     image: "assets/games/lucky-block-arena.png",
     desc: "The first ever battlegrounds simulator. Open lucky blocks for rare abilities, build the best loadout and fight for crowns.",
@@ -131,32 +110,56 @@ const GAMES = [
   {
     name: "Elemental Merge Defense",
     role: "Solo Programmer",
-    contribution: "Fully coded by me.",
     studio: "Mambo The Merger",
-    visits: 104996,
+    visits: 163815,
     link: "https://www.roblox.com/games/76596765173101",
     image: "assets/games/elemental-merge-defense.png",
     desc: "Defend your base against endless waves of enemies and bosses. Merge matching towers to unlock stronger ones, and infuse them with magic elements for devastating abilities.",
   },
   {
-    name: "Spin to Skydive",
-    role: "Solo Programmer",
-    contribution: "Fully coded by me.",
-    studio: "D2D Studio",
-    visits: 30953,
-    link: "https://www.roblox.com/games/71698412165346",
-    image: "assets/games/spin-to-skydive.png",
-    desc: "Spin to win, then skydive.",
-  },
-  {
     name: "Save Animals From Drowning!",
     role: "Solo Programmer",
-    contribution: "Fully coded by me.",
     studio: "The top 67%",
-    visits: 8125,
+    visits: 98831,
     link: "https://www.roblox.com/games/131683972885424",
     image: "assets/games/save-animals-from-drowning.png",
     desc: "Throw your lasso at drowning animals, pull them to safety, and earn money from every rescue — your animals earn and level even while offline.",
+  },
+  {
+    name: "Become The Egg",
+    role: "Solo Programmer",
+    studio: "Big Bald Egg",
+    visits: 86741,
+    link: "https://www.roblox.com/games/128283762728120",
+    image: "assets/games/become-the-egg.png",
+    desc: "Become an impostor egg and steal while the boss sleeps. Train on the treadmill to get faster, then hatch rare eggs and collect rare pets.",
+  },
+  {
+    name: "Steal A Masterpiece",
+    role: "Solo Programmer",
+    studio: "Mambo The Thief",
+    visits: 59863,
+    link: "https://www.roblox.com/games/103811481905543",
+    image: "assets/games/steal-a-masterpiece.png",
+    desc: "Build a museum, collect masterpieces and steal them from other players. Break into rival museums at night with bats, C4 and traps, then defend your own.",
+  },
+  {
+    name: "Bring Dinosaurs To Life",
+    role: "Solo Programmer",
+    studio: "Tea Rex Studios",
+    visits: 44448,
+    link: "https://www.roblox.com/games/88227322273517",
+    image: "assets/games/bring-dinosaurs-to-life.png",
+    desc: "Dig up dinosaur bones, clean them and build the dinosaur to bring it to life. Attract visitors to your park and buy better tools to dig up rarer dinosaurs.",
+  },
+  {
+    name: "Spin to Skydive",
+    role: "Solo Programmer",
+    studio: "D2D Studio",
+    visits: 31223,
+    link: "https://www.roblox.com/games/71698412165346",
+    image: "assets/games/spin-to-skydive.png",
+    desc: "Spin to win, then skydive.",
   },
 ];
 
@@ -238,9 +241,7 @@ const PROJECTS = [
    ========================================================================== */
 
 function formatVisits(n) {
-  if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M";
-  if (n >= 1e3) return (n / 1e3).toFixed(0) + "K";
-  return String(n);
+  return n.toLocaleString("en-US");
 }
 
 /* ---- Shipped games ---- */
@@ -259,7 +260,6 @@ for (const game of GAMES) {
     </div>
     <div class="card-body">
       <h3>${game.name}</h3>
-      ${game.contribution ? `<p class="card-contrib">${game.contribution}</p>` : ""}
     </div>`;
   gameGrid.appendChild(card);
 }
@@ -342,6 +342,46 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 } else {
   document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
+}
+
+/* ---- Hero button sub-labels track the content lists ---- */
+document.getElementById("showcaseCount").textContent = `${PROJECTS.length} systems & demos`;
+document.getElementById("gamesCount").textContent = `${GAMES.length} live games`;
+
+/* ---- Hero name decodes from glyph noise ---- */
+function scrambleIn(el, duration) {
+  const finalText = el.dataset.text;
+  const noise = "!<>-_\\/[]{}=+*^?#01";
+  const start = performance.now();
+  function frame(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const settled = Math.floor(progress * finalText.length);
+    let out = finalText.slice(0, settled);
+    for (let i = settled; i < finalText.length; i++) {
+      out += noise[Math.floor(Math.random() * noise.length)];
+    }
+    el.firstChild.nodeValue = out;
+    if (progress < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+/* ---- Hero stats count up from zero ---- */
+function countUp(el, duration) {
+  const target = Number(el.dataset.count);
+  const suffix = el.dataset.suffix || "";
+  const start = performance.now();
+  function frame(now) {
+    const t = Math.min((now - start) / duration, 1);
+    el.textContent = formatVisits(Math.round((1 - Math.pow(1 - t, 3)) * target)) + suffix;
+    if (t < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+if (!prefersReducedMotion) {
+  scrambleIn(document.getElementById("heroName"), 1100);
+  document.querySelectorAll(".stat-num[data-count]").forEach((el) => countUp(el, 1600));
 }
 
 /* ---- Cursor glow on the background grid ---- */
